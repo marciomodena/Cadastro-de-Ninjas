@@ -19,13 +19,16 @@ public class NinjaModel {
 
     @Id// para falar que o que ta embaixo dele vai ser um id
     @GeneratedValue(strategy = GenerationType.IDENTITY ) //anotação para sequenciar os id
+    @Column(name = "id")
     private int id;
 
+    @Column(name = "nome")
     private String nome;
 
     @Column(unique = true) // anotação para dados que são unicos no database
     private String email;
 
+    @Column(name = "idade")
     private int idade;
 
     //No ManyToOne preciso juntar as colunas do mappedBy do OneToMany usando o JoinColumn
