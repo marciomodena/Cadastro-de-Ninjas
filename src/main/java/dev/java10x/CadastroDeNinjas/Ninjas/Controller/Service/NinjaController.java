@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class NinjaController {
 
-    @GetMapping("/boasvindas") //vou pegar informações , uma convenção é usar o "barra" pois é a mesma coisa que "localhost:8080/boasvindas
-    public String boasVindas(){
+    @GetMapping("/boasvindas")
+    //vou pegar informações , uma convenção é usar o "barra" pois é a mesma coisa que "localhost:8080/boasvindas
+    public String boasVindas() {
+
         return "Essa é minha primeira mensagem nessa rota";
     }
+
+
+
 }
