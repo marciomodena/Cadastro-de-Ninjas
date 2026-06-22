@@ -31,6 +31,9 @@ public class NinjaModel {
     @Column(name = "idade")
     private int idade;
 
+    @Column(name = "img_url")
+    private String img_url;
+
     //No ManyToOne preciso juntar as colunas do mappedBy do OneToMany usando o JoinColumn
     @JoinColumn(name = "missoes_id") // missoes_id é o foreign key
     @ManyToOne //um ninja só podera ter uma missão - 1 --> 1
