@@ -32,7 +32,7 @@ public class NinjaModel {
     private int idade;
 
     @Column(name = "img_url")
-    private String img_url;
+    private String imgUrl;
 
     //No ManyToOne preciso juntar as colunas do mappedBy do OneToMany usando o JoinColumn
     @JoinColumn(name = "missoes_id") // missoes_id é o foreign key
